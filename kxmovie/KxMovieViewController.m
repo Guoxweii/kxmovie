@@ -10,10 +10,6 @@
 //  KxMovie is licenced under the LGPL v3, see lgpl-3.0.txt
 
 #import "KxMovieViewController.h"
-#import <MediaPlayer/MediaPlayer.h>
-#import <QuartzCore/QuartzCore.h>
-#import "KxMovieDecoder.h"
-#import "KxAudioManager.h"
 #import "KxMovieGLView.h"
 #import "KxLogger.h"
 
@@ -70,73 +66,10 @@ static NSMutableDictionary * gHistory;
 #define NETWORK_MIN_BUFFERED_DURATION 2.0
 #define NETWORK_MAX_BUFFERED_DURATION 4.0
 
-@interface KxMovieViewController () {
-
-    KxMovieDecoder      *_decoder;    
-    dispatch_queue_t    _dispatchQueue;
-    NSMutableArray      *_videoFrames;
-    NSMutableArray      *_audioFrames;
-    NSMutableArray      *_subtitles;
-    NSData              *_currentAudioFrame;
-    NSUInteger          _currentAudioFramePos;
-    CGFloat             _moviePosition;
-    BOOL                _disableUpdateHUD;
-    NSTimeInterval      _tickCorrectionTime;
-    NSTimeInterval      _tickCorrectionPosition;
-    NSUInteger          _tickCounter;
-    BOOL                _fullscreen;
-    BOOL                _hiddenHUD;
-    BOOL                _fitMode;
-    BOOL                _infoMode;
-    BOOL                _restoreIdleTimer;
-    BOOL                _interrupted;
-
+@interface KxMovieViewController (){
     KxMovieGLView       *_glView;
-    UIImageView         *_imageView;
-    UIView              *_topHUD;
-    UIToolbar           *_topBar;
-    UIToolbar           *_bottomBar;
-    UISlider            *_progressSlider;
-
-    UIBarButtonItem     *_playBtn;
-    UIBarButtonItem     *_pauseBtn;
-    UIBarButtonItem     *_rewindBtn;
-    UIBarButtonItem     *_fforwardBtn;
-    UIBarButtonItem     *_spaceItem;
-    UIBarButtonItem     *_fixedSpaceItem;
-
-    UIButton            *_doneButton;
-    UILabel             *_progressLabel;
-    UILabel             *_leftLabel;
-    UIButton            *_infoButton;
-    UITableView         *_tableView;
-    UIActivityIndicatorView *_activityIndicatorView;
-    UILabel             *_subtitlesLabel;
-    
-    UITapGestureRecognizer *_tapGestureRecognizer;
-    UITapGestureRecognizer *_doubleTapGestureRecognizer;
-    UIPanGestureRecognizer *_panGestureRecognizer;
-        
-#ifdef DEBUG
-    UILabel             *_messageLabel;
-    NSTimeInterval      _debugStartTime;
-    NSUInteger          _debugAudioStatus;
-    NSDate              *_debugAudioStatusTS;
-#endif
-
-    CGFloat             _bufferedDuration;
-    CGFloat             _minBufferedDuration;
-    CGFloat             _maxBufferedDuration;
-    BOOL                _buffered;
-    
-    BOOL                _savedIdleTimer;
-    
-    NSDictionary        *_parameters;
 }
 
-@property (readwrite) BOOL playing;
-@property (readwrite) BOOL decoding;
-@property (readwrite, strong) KxArtworkFrame *artworkFrame;
 @end
 
 @implementation KxMovieViewController

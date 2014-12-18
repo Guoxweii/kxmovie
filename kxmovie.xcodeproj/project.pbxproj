@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8704657C16F6ECA000D4083E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8704657A16F6EC9100D4083E /* libiconv.dylib */; };
-		87E793FD16390F6D000A0848 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E793FC16390F6D000A0848 /* UIKit.framework */; };
-		87E793FF16390F6D000A0848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E793FE16390F6D000A0848 /* Foundation.framework */; };
-		87E7940116390F6D000A0848 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7940016390F6D000A0848 /* CoreGraphics.framework */; };
 		87E7940916390F6D000A0848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7940816390F6D000A0848 /* main.m */; };
 		87E7940F16390F6D000A0848 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E7940E16390F6D000A0848 /* Default.png */; };
 		87E7941116390F6D000A0848 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E7941016390F6D000A0848 /* Default@2x.png */; };
@@ -22,30 +18,26 @@
 		87E7942A1639107F000A0848 /* KxMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E794251639107F000A0848 /* KxMovieViewController.m */; };
 		87E7942F1639108E000A0848 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7942C1639108E000A0848 /* AppDelegate.m */; };
 		87E794301639108E000A0848 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7942E1639108E000A0848 /* MainViewController.m */; };
-		87E7943F1639110F000A0848 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7943D163910FB000A0848 /* CoreAudio.framework */; };
-		87E794401639110F000A0848 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7943B163910F6000A0848 /* AudioToolbox.framework */; };
-		87E794411639110F000A0848 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79439163910EA000A0848 /* Accelerate.framework */; };
-		87E794421639110F000A0848 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79437163910D0000A0848 /* QuartzCore.framework */; };
-		87E794431639110F000A0848 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79435163910CA000A0848 /* OpenGLES.framework */; };
-		87E7944A16391B9E000A0848 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7944416391B9E000A0848 /* libavcodec.a */; };
-		87E7944C16391B9E000A0848 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7944616391B9E000A0848 /* libavformat.a */; };
-		87E7944D16391B9E000A0848 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7944716391B9E000A0848 /* libavutil.a */; };
-		87E7944E16391B9E000A0848 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7944816391B9E000A0848 /* libswresample.a */; };
-		87E7944F16391B9E000A0848 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7944916391B9E000A0848 /* libswscale.a */; };
-		87E7945116391BC1000A0848 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7945016391BC1000A0848 /* libz.dylib */; };
-		87E7945416391BDC000A0848 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7945216391BD2000A0848 /* MediaPlayer.framework */; };
-		87FD6176163A75440090956E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E793FE16390F6D000A0848 /* Foundation.framework */; };
 		87FD6182163A75AF0090956E /* KxAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E7941E1639107F000A0848 /* KxAudioManager.m */; };
 		87FD6183163A75B10090956E /* KxMovieDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E794211639107F000A0848 /* KxMovieDecoder.m */; };
 		87FD6184163A75B50090956E /* KxMovieGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E794231639107F000A0848 /* KxMovieGLView.m */; };
 		87FD6185163A75B70090956E /* KxMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E794251639107F000A0848 /* KxMovieViewController.m */; };
-		87FD618D163A75CF0090956E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7940016390F6D000A0848 /* CoreGraphics.framework */; };
-		87FD618E163A75D20090956E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7945216391BD2000A0848 /* MediaPlayer.framework */; };
-		87FD618F163A75D60090956E /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7943D163910FB000A0848 /* CoreAudio.framework */; };
-		87FD6190163A75D90090956E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7943B163910F6000A0848 /* AudioToolbox.framework */; };
-		87FD6191163A75DC0090956E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79437163910D0000A0848 /* QuartzCore.framework */; };
-		87FD6192163A75DF0090956E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79439163910EA000A0848 /* Accelerate.framework */; };
-		87FD6193163A75E10090956E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E79435163910CA000A0848 /* OpenGLES.framework */; };
+		BC0164021A304EB90072F171 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70B9B1A30316E00B18565 /* libiconv.dylib */; };
+		BC0164031A304EC80072F171 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70B9D1A30317A00B18565 /* libz.dylib */; };
+		BCB70BA51A3031B200B18565 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BA01A30318D00B18565 /* libavcodec.a */; };
+		BCB70BA61A3031B200B18565 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BA11A30318D00B18565 /* libavformat.a */; };
+		BCB70BA71A3031B200B18565 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BA21A30318D00B18565 /* libavutil.a */; };
+		BCB70BA81A3031B200B18565 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BA31A30318D00B18565 /* libswresample.a */; };
+		BCB70BA91A3031B200B18565 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BA41A30318D00B18565 /* libswscale.a */; };
+		BCB70BAB1A3031C800B18565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BAA1A3031C800B18565 /* UIKit.framework */; };
+		BCB70BAD1A3031D000B18565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BAC1A3031D000B18565 /* Foundation.framework */; };
+		BCB70BAF1A3031DA00B18565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BAE1A3031DA00B18565 /* CoreGraphics.framework */; };
+		BCB70BB11A3031E300B18565 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BB01A3031E300B18565 /* MediaPlayer.framework */; };
+		BCB70BB31A3031EC00B18565 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BB21A3031EC00B18565 /* CoreAudio.framework */; };
+		BCB70BB51A3031F900B18565 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BB41A3031F900B18565 /* AudioToolbox.framework */; };
+		BCB70BB71A30320A00B18565 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BB61A30320A00B18565 /* Accelerate.framework */; };
+		BCB70BB91A30322400B18565 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BB81A30322400B18565 /* QuartzCore.framework */; };
+		BCB70BBB1A30322E00B18565 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BBA1A30322E00B18565 /* OpenGLES.framework */; };
 		FD20733F5D6A4546A9836E2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D953B9D2DC48FBB580C6AC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,15 +54,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		07D459C0599C42B1906B39AD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		34124330B983C9C63FADDFEE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		49D953B9D2DC48FBB580C6AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6AB9BC191288370010CAA1 /* kxmovie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kxmovie-Prefix.pch"; sourceTree = "<group>"; };
 		4E6AB9BD19128FDA0010CAA1 /* KxLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KxLogger.h; sourceTree = "<group>"; };
-		8704657A16F6EC9100D4083E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		87E793F816390F6D000A0848 /* KxMovieExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KxMovieExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		87E793FC16390F6D000A0848 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		87E793FE16390F6D000A0848 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		87E7940016390F6D000A0848 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		87E7940416390F6D000A0848 /* KxMovieExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KxMovieExample-Info.plist"; sourceTree = "<group>"; };
 		87E7940816390F6D000A0848 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87E7940A16390F6D000A0848 /* KxMovieExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KxMovieExample-Prefix.pch"; sourceTree = "<group>"; };
@@ -89,20 +77,25 @@
 		87E7942C1639108E000A0848 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		87E7942D1639108E000A0848 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		87E7942E1639108E000A0848 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		87E79435163910CA000A0848 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
-		87E79437163910D0000A0848 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		87E79439163910EA000A0848 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		87E7943B163910F6000A0848 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		87E7943D163910FB000A0848 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
-		87E7944416391B9E000A0848 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = libs/libavcodec.a; sourceTree = "<group>"; };
-		87E7944616391B9E000A0848 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = libs/libavformat.a; sourceTree = "<group>"; };
-		87E7944716391B9E000A0848 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = libs/libavutil.a; sourceTree = "<group>"; };
-		87E7944816391B9E000A0848 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = libs/libswresample.a; sourceTree = "<group>"; };
-		87E7944916391B9E000A0848 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = libs/libswscale.a; sourceTree = "<group>"; };
-		87E7945016391BC1000A0848 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
-		87E7945216391BD2000A0848 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		87E7946116394577000A0848 /* KxAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxAudioManager.h; sourceTree = "<group>"; };
 		87FD6175163A75440090956E /* libkxmovie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkxmovie.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB70B9B1A30316E00B18565 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
+		BCB70B9D1A30317A00B18565 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		BCB70BA01A30318D00B18565 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		BCB70BA11A30318D00B18565 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
+		BCB70BA21A30318D00B18565 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
+		BCB70BA31A30318D00B18565 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
+		BCB70BA41A30318D00B18565 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		BCB70BAA1A3031C800B18565 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BCB70BAC1A3031D000B18565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BCB70BAE1A3031DA00B18565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		BCB70BB01A3031E300B18565 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		BCB70BB21A3031EC00B18565 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		BCB70BB41A3031F900B18565 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		BCB70BB61A30320A00B18565 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		BCB70BB81A30322400B18565 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BCB70BBA1A30322E00B18565 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		CAC203C3C4C33A04650DA36B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,22 +103,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8704657C16F6ECA000D4083E /* libiconv.dylib in Frameworks */,
-				87E7945116391BC1000A0848 /* libz.dylib in Frameworks */,
-				87E7944A16391B9E000A0848 /* libavcodec.a in Frameworks */,
-				87E7944C16391B9E000A0848 /* libavformat.a in Frameworks */,
-				87E7944D16391B9E000A0848 /* libavutil.a in Frameworks */,
-				87E7944E16391B9E000A0848 /* libswresample.a in Frameworks */,
-				87E7944F16391B9E000A0848 /* libswscale.a in Frameworks */,
-				87E793FD16390F6D000A0848 /* UIKit.framework in Frameworks */,
-				87E793FF16390F6D000A0848 /* Foundation.framework in Frameworks */,
-				87E7940116390F6D000A0848 /* CoreGraphics.framework in Frameworks */,
-				87E7945416391BDC000A0848 /* MediaPlayer.framework in Frameworks */,
-				87E7943F1639110F000A0848 /* CoreAudio.framework in Frameworks */,
-				87E794401639110F000A0848 /* AudioToolbox.framework in Frameworks */,
-				87E794411639110F000A0848 /* Accelerate.framework in Frameworks */,
-				87E794421639110F000A0848 /* QuartzCore.framework in Frameworks */,
-				87E794431639110F000A0848 /* OpenGLES.framework in Frameworks */,
+				BC0164021A304EB90072F171 /* libiconv.dylib in Frameworks */,
+				BC0164031A304EC80072F171 /* libz.dylib in Frameworks */,
+				BCB70BA51A3031B200B18565 /* libavcodec.a in Frameworks */,
+				BCB70BA61A3031B200B18565 /* libavformat.a in Frameworks */,
+				BCB70BA71A3031B200B18565 /* libavutil.a in Frameworks */,
+				BCB70BA81A3031B200B18565 /* libswresample.a in Frameworks */,
+				BCB70BA91A3031B200B18565 /* libswscale.a in Frameworks */,
+				BCB70BAB1A3031C800B18565 /* UIKit.framework in Frameworks */,
+				BCB70BAD1A3031D000B18565 /* Foundation.framework in Frameworks */,
+				BCB70BAF1A3031DA00B18565 /* CoreGraphics.framework in Frameworks */,
+				BCB70BBB1A30322E00B18565 /* OpenGLES.framework in Frameworks */,
+				BCB70BB91A30322400B18565 /* QuartzCore.framework in Frameworks */,
+				BCB70BB71A30320A00B18565 /* Accelerate.framework in Frameworks */,
+				BCB70BB51A3031F900B18565 /* AudioToolbox.framework in Frameworks */,
+				BCB70BB31A3031EC00B18565 /* CoreAudio.framework in Frameworks */,
+				BCB70BB11A3031E300B18565 /* MediaPlayer.framework in Frameworks */,
 				FD20733F5D6A4546A9836E2D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,20 +127,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87FD6176163A75440090956E /* Foundation.framework in Frameworks */,
-				87FD618D163A75CF0090956E /* CoreGraphics.framework in Frameworks */,
-				87FD618E163A75D20090956E /* MediaPlayer.framework in Frameworks */,
-				87FD618F163A75D60090956E /* CoreAudio.framework in Frameworks */,
-				87FD6190163A75D90090956E /* AudioToolbox.framework in Frameworks */,
-				87FD6192163A75DF0090956E /* Accelerate.framework in Frameworks */,
-				87FD6191163A75DC0090956E /* QuartzCore.framework in Frameworks */,
-				87FD6193163A75E10090956E /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D5B0B6AAACBD576003EF0FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34124330B983C9C63FADDFEE /* Pods.debug.xcconfig */,
+				CAC203C3C4C33A04650DA36B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		87E793EB16390F10000A0848 = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +149,7 @@
 				87FD6177163A75440090956E /* kxmovie */,
 				87E793FB16390F6D000A0848 /* Frameworks */,
 				87E793F916390F6D000A0848 /* Products */,
-				07D459C0599C42B1906B39AD /* Pods.xcconfig */,
+				3D5B0B6AAACBD576003EF0FF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,22 +165,18 @@
 		87E793FB16390F6D000A0848 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8704657A16F6EC9100D4083E /* libiconv.dylib */,
-				87E7944416391B9E000A0848 /* libavcodec.a */,
-				87E7944616391B9E000A0848 /* libavformat.a */,
-				87E7944716391B9E000A0848 /* libavutil.a */,
-				87E7944816391B9E000A0848 /* libswresample.a */,
-				87E7944916391B9E000A0848 /* libswscale.a */,
-				87E7945016391BC1000A0848 /* libz.dylib */,
-				87E793FC16390F6D000A0848 /* UIKit.framework */,
-				87E793FE16390F6D000A0848 /* Foundation.framework */,
-				87E7940016390F6D000A0848 /* CoreGraphics.framework */,
-				87E7945216391BD2000A0848 /* MediaPlayer.framework */,
-				87E7943D163910FB000A0848 /* CoreAudio.framework */,
-				87E7943B163910F6000A0848 /* AudioToolbox.framework */,
-				87E79439163910EA000A0848 /* Accelerate.framework */,
-				87E79437163910D0000A0848 /* QuartzCore.framework */,
-				87E79435163910CA000A0848 /* OpenGLES.framework */,
+				BCB70BBA1A30322E00B18565 /* OpenGLES.framework */,
+				BCB70BB81A30322400B18565 /* QuartzCore.framework */,
+				BCB70BB61A30320A00B18565 /* Accelerate.framework */,
+				BCB70BB41A3031F900B18565 /* AudioToolbox.framework */,
+				BCB70BB21A3031EC00B18565 /* CoreAudio.framework */,
+				BCB70BB01A3031E300B18565 /* MediaPlayer.framework */,
+				BCB70BAE1A3031DA00B18565 /* CoreGraphics.framework */,
+				BCB70BAC1A3031D000B18565 /* Foundation.framework */,
+				BCB70BAA1A3031C800B18565 /* UIKit.framework */,
+				BCB70B9F1A30318D00B18565 /* FFmpeg */,
+				BCB70B9D1A30317A00B18565 /* libz.dylib */,
+				BCB70B9B1A30316E00B18565 /* libiconv.dylib */,
 				49D953B9D2DC48FBB580C6AC /* libPods.a */,
 			);
 			name = Frameworks;
@@ -233,6 +223,19 @@
 				4E6AB9BC191288370010CAA1 /* kxmovie-Prefix.pch */,
 			);
 			path = kxmovie;
+			sourceTree = "<group>";
+		};
+		BCB70B9F1A30318D00B18565 /* FFmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				BCB70BA01A30318D00B18565 /* libavcodec.a */,
+				BCB70BA11A30318D00B18565 /* libavformat.a */,
+				BCB70BA21A30318D00B18565 /* libavutil.a */,
+				BCB70BA31A30318D00B18565 /* libswresample.a */,
+				BCB70BA41A30318D00B18565 /* libswscale.a */,
+			);
+			name = FFmpeg;
+			path = libs/FFmpeg;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,7 +335,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D2074A9FBC4F4D4892A202BE /* Check Pods Manifest.lock */ = {
@@ -400,7 +403,7 @@
 		};
 		87E7941B16390F6D000A0848 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07D459C0599C42B1906B39AD /* Pods.xcconfig */;
+			baseConfigurationReference = 34124330B983C9C63FADDFEE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -433,10 +436,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/FFmpeg\"",
+					"$(PROJECT_DIR)/libs/FFmpeg",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F7D87EB9-8C75-4EE9-AB3B-466913B9C8CB";
+				PROVISIONING_PROFILE = "c124f6ac-299a-4840-a1da-61a2830a7cd8";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = ffmpeg;
@@ -446,7 +450,7 @@
 		};
 		87E7941C16390F6D000A0848 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07D459C0599C42B1906B39AD /* Pods.xcconfig */;
+			baseConfigurationReference = CAC203C3C4C33A04650DA36B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -472,9 +476,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/libs/FFmpeg\"",
+					"$(PROJECT_DIR)/libs/FFmpeg",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F7D87EB9-8C75-4EE9-AB3B-466913B9C8CB";
+				PROVISIONING_PROFILE = "c124f6ac-299a-4840-a1da-61a2830a7cd8";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = ffmpeg;
