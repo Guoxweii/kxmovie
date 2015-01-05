@@ -17,6 +17,7 @@
     NSArray *_remoteMovies;
 }
 @property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) Muxer *muxer;
 @end
 
 @implementation MainViewController
@@ -37,6 +38,7 @@
             @"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov",
             @"http://santai.tv/vod/test/test_format_1.3gp",
             @"http://211.144.114.51:5000/zg_av/uploads/video/media/6/c3625ef111.mp4",
+            @"http://127.0.0.1:8000/test.sdp",
         
             //@"rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.mov",
             //@"http://santai.tv/vod/test/BigBuckBunny_175k.mov",
@@ -69,6 +71,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    Muxer *muxer = [[Muxer alloc] init];
+    [muxer gather];
+    [self setMuxer:muxer];
 
 #ifdef DEBUG_AUTOPLAY
     [self performSelector:@selector(launchDebugTest) withObject:nil afterDelay:0.5];

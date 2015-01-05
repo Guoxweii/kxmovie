@@ -24,6 +24,7 @@
 		87FD6185163A75B70090956E /* KxMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E794251639107F000A0848 /* KxMovieViewController.m */; };
 		BC0164021A304EB90072F171 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70B9B1A30316E00B18565 /* libiconv.dylib */; };
 		BC0164031A304EC80072F171 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70B9D1A30317A00B18565 /* libz.dylib */; };
+		BC6EE72E1A5921F700305FC2 /* Muxer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6EE72D1A5921F700305FC2 /* Muxer.m */; };
 		BCB70BA51A3031B200B18565 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BA01A30318D00B18565 /* libavcodec.a */; };
 		BCB70BA61A3031B200B18565 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BA11A30318D00B18565 /* libavformat.a */; };
 		BCB70BA71A3031B200B18565 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BA21A30318D00B18565 /* libavutil.a */; };
@@ -79,6 +80,8 @@
 		87E7942E1639108E000A0848 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		87E7946116394577000A0848 /* KxAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxAudioManager.h; sourceTree = "<group>"; };
 		87FD6175163A75440090956E /* libkxmovie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkxmovie.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6EE72C1A5921F700305FC2 /* Muxer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Muxer.h; sourceTree = "<group>"; };
+		BC6EE72D1A5921F700305FC2 /* Muxer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Muxer.m; sourceTree = "<group>"; };
 		BCB70B9B1A30316E00B18565 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		BCB70B9D1A30317A00B18565 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		BCB70BA01A30318D00B18565 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 				87E7942D1639108E000A0848 /* MainViewController.h */,
 				87E7942E1639108E000A0848 /* MainViewController.m */,
 				87E7940316390F6D000A0848 /* Supporting Files */,
+				BC6EE72C1A5921F700305FC2 /* Muxer.h */,
+				BC6EE72D1A5921F700305FC2 /* Muxer.m */,
 			);
 			path = KxMovieExample;
 			sourceTree = "<group>";
@@ -363,6 +368,7 @@
 				87E7940916390F6D000A0848 /* main.m in Sources */,
 				87E794261639107F000A0848 /* KxAudioManager.m in Sources */,
 				87E794281639107F000A0848 /* KxMovieDecoder.m in Sources */,
+				BC6EE72E1A5921F700305FC2 /* Muxer.m in Sources */,
 				87E794291639107F000A0848 /* KxMovieGLView.m in Sources */,
 				87E7942A1639107F000A0848 /* KxMovieViewController.m in Sources */,
 				87E7942F1639108E000A0848 /* AppDelegate.m in Sources */,
