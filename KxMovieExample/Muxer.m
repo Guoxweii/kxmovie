@@ -54,18 +54,16 @@
 
     av_read_play(pFormatCtx);
     
-    int ix = 0;
+//    int ix = 0;
     while(av_read_frame(pFormatCtx,&packet)>=0){
         if(packet.stream_index == video_stream_index){
             //packet is video
             if(stream == NULL){
                 //create stream in file
+//                stream = avformat_new_stream(oc, pFormatCtx->streams[video_stream_index]->codec->codec);
                 stream = avformat_new_stream(oc, NULL);
                 avcodec_copy_context(stream->codec, pFormatCtx->streams[video_stream_index]->codec);
-//                stream->sample_aspect_ratio = pFormatCtx->streams[video_stream_index]->codec->sample_aspect_ratio;
-                
-                stream->sample_aspect_ratio.num = pFormatCtx->streams[video_stream_index]->codec->sample_aspect_ratio.num;
-                stream->sample_aspect_ratio.den = pFormatCtx->streams[video_stream_index]->codec->sample_aspect_ratio.den;
+                stream->sample_aspect_ratio = pFormatCtx->streams[video_stream_index]->codec->sample_aspect_ratio;
                 
                 // Assume r_frame_rate is accurate
                 stream->r_frame_rate = pFormatCtx->streams[video_stream_index]->r_frame_rate;
@@ -77,8 +75,19 @@
             }
             packet.stream_index = stream->id;
             
-            packet.pts = ix++;
-            packet.dts = packet.pts;
+//            packet.pts = ix++;
+//            packet.dts = packet.pts;
+            
+//            packet.pts = av_rescale_q_rnd(packet.pts, pFormatCtx->streams[video_stream_index]->codec->time_base, oc->streams[video_stream_index]->time_base,(AV_ROUND_NEAR_INF|AV_ROUND_PASS_MINMAX));
+//            packet.dts = av_rescale_q_rnd(packet.dts, pFormatCtx->streams[video_stream_index]->codec->time_base, oc->streams[video_stream_index]->time_base,(AV_ROUND_NEAR_INF|AV_ROUND_PASS_MINMAX));
+//            packet.duration = av_rescale_q(packet.duration, pFormatCtx->streams[video_stream_index]->codec->time_base, oc->streams[video_stream_index]->time_base);
+//            packet.pos = -1;
+            
+//            packet.pts = av_rescale_q(packet.pts, pFormatCtx->streams[video_stream_index]->codec->time_base, oc->streams[video_stream_index]->time_base);
+//            packet.dts = av_rescale_q(packet.dts, pFormatCtx->streams[video_stream_index]->codec->time_base, oc->streams[video_stream_index]->time_base);
+            
+            packet.pts *= pFormatCtx->streams[video_stream_index]->codec->ticks_per_frame;
+            packet.dts *= pFormatCtx->streams[video_stream_index]->codec->ticks_per_frame;
             
             av_interleaved_write_frame(oc, &packet);
         }
