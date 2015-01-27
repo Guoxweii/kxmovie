@@ -8,27 +8,38 @@
 
 #import "Muxer.h"
 
+#include "libavformat/avformat.h"
+#include "libavcodec/avcodec.h"
+#include "libswscale/swscale.h"
+#include "libswresample/swresample.h"
+#include "libavutil/pixdesc.h"
+
 @implementation Muxer
 
-- (void)gather {
+- (BOOL)gather:(NSString *)filePath sdpPath:(NSString *)sdpPath {
     av_register_all();
     avcodec_register_all();
     avformat_network_init();
     
+    [self setState:@"INITIALIZE"];
+    
     AVFormatContext *pFormatCtx;
     pFormatCtx = avformat_alloc_context();
     int video_stream_index;
-    char url[]="http://127.0.0.1:8000/test.sdp";
+//    char url[]="http://127.0.0.1:8000/test.sdp";
     
-    
-    if (avformat_open_input(&pFormatCtx,url,NULL,NULL) != 0) {
+    if (avformat_open_input(&pFormatCtx,[sdpPath UTF8String],NULL,NULL) != 0) {
         NSLog(@"can't open stream");
+        return FALSE;
     }
     
     if (avformat_find_stream_info(pFormatCtx, NULL) < 0) {
         NSLog(@"can't find stream info");
         avformat_close_input(&pFormatCtx);
+        return FALSE;
     }
+    
+    [self setState:@"PROCESS"];
     
     for (int i=0; i<pFormatCtx->nb_streams; i++) {
         if (pFormatCtx->streams[i]->codec->codec_type == AVMEDIA_TYPE_VIDEO) {
@@ -39,9 +50,9 @@
     AVPacket packet;
     av_init_packet(&packet);
     
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"test.mp4"];
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *documentsDirectory = [paths objectAtIndex:0];
+//    filePath = [documentsDirectory stringByAppendingPathComponent:@"test.mp4"];
     
     //open output file
     AVOutputFormat* fmt = av_guess_format(NULL, [filePath UTF8String], NULL);
@@ -55,7 +66,7 @@
     av_read_play(pFormatCtx);
     
 //    int ix = 0;
-    while(av_read_frame(pFormatCtx,&packet)>=0){
+    while(![[self state] isEqualToString:@"FINISHED"] && av_read_frame(pFormatCtx,&packet)>=0){
         if(packet.stream_index == video_stream_index){
             //packet is video
             if(stream == NULL){
@@ -66,10 +77,10 @@
                 stream->sample_aspect_ratio = pFormatCtx->streams[video_stream_index]->codec->sample_aspect_ratio;
                 
                 // Assume r_frame_rate is accurate
-                stream->r_frame_rate = pFormatCtx->streams[video_stream_index]->r_frame_rate;
-                stream->avg_frame_rate = stream->r_frame_rate;
-                stream->time_base = av_inv_q( stream->r_frame_rate );
-                stream->codec->time_base = stream->time_base;
+//                stream->r_frame_rate = pFormatCtx->streams[video_stream_index]->r_frame_rate;
+//                stream->avg_frame_rate = stream->r_frame_rate;
+                stream->time_base = (AVRational){ 1, 25 };
+//                stream->codec->time_base = stream->time_base;
                 
                 avformat_write_header(oc, NULL);
             }
@@ -100,7 +111,14 @@
     avformat_free_context(oc);
     avformat_network_deinit();
     
+    [self setState:@"SUCCESS"];
+    
     NSLog(@"the file path is %@", filePath);
+    return TRUE;
+}
+
+- (void)stop {
+    [self setState:@"FINISHED"];
 }
 
 @end

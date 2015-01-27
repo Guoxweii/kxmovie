@@ -293,6 +293,8 @@ task :copy_movie do
 	FileUtils.copy Pathname.new('kxmovie/KxMovieViewController.h'), dest
 	FileUtils.copy Pathname.new('kxmovie/KxAudioManager.h'), dest
 	FileUtils.copy Pathname.new('kxmovie/KxMovieDecoder.h'), dest
+	FileUtils.copy Pathname.new('kxmovie/KxMovieDecoder.h'), dest
+	FileUtils.copy Pathname.new('kxmovie/Muxer.h'), dest
 	FileUtils.copy_entry Pathname.new('kxmovie/kxmovie.bundle'), dest + 'kxmovie.bundle'
 end
 
@@ -300,7 +302,7 @@ end
 task :clean => [:clean_movie_debug, :clean_movie_release, :clean_ffmpeg]
 task :build_ffmpeg => [:check_gas_preprocessor, :build_ffmpeg_armv7, :build_ffmpeg_armv7s, :build_ffmpeg_arm64, :build_ffmpeg_i386, :build_ffmpeg_universal]
 #task :build_movie => [:build_movie_debug, :copy_movie]
-task :build_movie => [:build_movie_release, :copy_movie]
+# task :build_movie => [:build_movie_release, :copy_movie]
 #task :build_movie => [:build_movie_debug, :copy_movie]
 task :build_movie => [:build_movie_release, :copy_movie]
 task :build_all => [:build_ffmpeg, :build_movie]

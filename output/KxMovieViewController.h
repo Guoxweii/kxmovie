@@ -57,6 +57,7 @@ extern NSString * const KxMovieParameterDisableDeinterlacing;   // BOOL
     UIButton            *_doneButton;
     UILabel             *_progressLabel;
     UILabel             *_leftLabel;
+    UIButton            *_infoButton;
     UITableView         *_tableView;
     UIActivityIndicatorView *_activityIndicatorView;
     UILabel             *_subtitlesLabel;
@@ -87,7 +88,6 @@ extern NSString * const KxMovieParameterDisableDeinterlacing;   // BOOL
 
 @property (readwrite) BOOL playing;
 @property (readwrite) BOOL decoding;
-@property (readwrite, strong) UIButton *infoButton;
 @property (readwrite, strong) KxArtworkFrame *artworkFrame;
 
 - (void) play;

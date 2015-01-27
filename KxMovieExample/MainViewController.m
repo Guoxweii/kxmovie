@@ -12,12 +12,13 @@
 #import "MainViewController.h"
 #import "KxMovieViewController.h"
 
+#import "Muxer.h"
+
 @interface MainViewController () {
     NSArray *_localMovies;
     NSArray *_remoteMovies;
 }
 @property (strong, nonatomic) UITableView *tableView;
-@property (strong, nonatomic) Muxer *muxer;
 @end
 
 @implementation MainViewController
@@ -73,8 +74,7 @@
     [super viewDidLoad];
     
     Muxer *muxer = [[Muxer alloc] init];
-    [muxer gather];
-    [self setMuxer:muxer];
+    [muxer gather:@"123" sdpPath:@"123"];
 
 #ifdef DEBUG_AUTOPLAY
     [self performSelector:@selector(launchDebugTest) withObject:nil afterDelay:0.5];

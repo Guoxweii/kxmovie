@@ -24,7 +24,8 @@
 		87FD6185163A75B70090956E /* KxMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E794251639107F000A0848 /* KxMovieViewController.m */; };
 		BC0164021A304EB90072F171 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70B9B1A30316E00B18565 /* libiconv.dylib */; };
 		BC0164031A304EC80072F171 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70B9D1A30317A00B18565 /* libz.dylib */; };
-		BC6EE72E1A5921F700305FC2 /* Muxer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6EE72D1A5921F700305FC2 /* Muxer.m */; };
+		BC1181F91A76869100424F4F /* Muxer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6EE72D1A5921F700305FC2 /* Muxer.m */; };
+		BC1181FA1A77220D00424F4F /* Muxer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6EE72D1A5921F700305FC2 /* Muxer.m */; };
 		BCB70BA51A3031B200B18565 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BA01A30318D00B18565 /* libavcodec.a */; };
 		BCB70BA61A3031B200B18565 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BA11A30318D00B18565 /* libavformat.a */; };
 		BCB70BA71A3031B200B18565 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB70BA21A30318D00B18565 /* libavutil.a */; };
@@ -194,8 +195,6 @@
 				87E7942D1639108E000A0848 /* MainViewController.h */,
 				87E7942E1639108E000A0848 /* MainViewController.m */,
 				87E7940316390F6D000A0848 /* Supporting Files */,
-				BC6EE72C1A5921F700305FC2 /* Muxer.h */,
-				BC6EE72D1A5921F700305FC2 /* Muxer.m */,
 			);
 			path = KxMovieExample;
 			sourceTree = "<group>";
@@ -226,6 +225,8 @@
 				87E794251639107F000A0848 /* KxMovieViewController.m */,
 				4E6AB9BD19128FDA0010CAA1 /* KxLogger.h */,
 				4E6AB9BC191288370010CAA1 /* kxmovie-Prefix.pch */,
+				BC6EE72C1A5921F700305FC2 /* Muxer.h */,
+				BC6EE72D1A5921F700305FC2 /* Muxer.m */,
 			);
 			path = kxmovie;
 			sourceTree = "<group>";
@@ -365,10 +366,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1181FA1A77220D00424F4F /* Muxer.m in Sources */,
 				87E7940916390F6D000A0848 /* main.m in Sources */,
 				87E794261639107F000A0848 /* KxAudioManager.m in Sources */,
 				87E794281639107F000A0848 /* KxMovieDecoder.m in Sources */,
-				BC6EE72E1A5921F700305FC2 /* Muxer.m in Sources */,
 				87E794291639107F000A0848 /* KxMovieGLView.m in Sources */,
 				87E7942A1639107F000A0848 /* KxMovieViewController.m in Sources */,
 				87E7942F1639108E000A0848 /* AppDelegate.m in Sources */,
@@ -380,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1181F91A76869100424F4F /* Muxer.m in Sources */,
 				87FD6182163A75AF0090956E /* KxAudioManager.m in Sources */,
 				87FD6183163A75B10090956E /* KxMovieDecoder.m in Sources */,
 				87FD6184163A75B50090956E /* KxMovieGLView.m in Sources */,
