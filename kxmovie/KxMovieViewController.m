@@ -514,6 +514,10 @@ _messageLabel.hidden = YES;
 
 - (void) doneDidTouch: (id) sender
 {
+    if (_doneCallback) {
+        _doneCallback();
+    }
+    
     if (self.presentingViewController || !self.navigationController)
         [self dismissViewControllerAnimated:YES completion:nil];
     else

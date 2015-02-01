@@ -21,6 +21,8 @@ extern NSString * const KxMovieParameterMinBufferedDuration;    // Float
 extern NSString * const KxMovieParameterMaxBufferedDuration;    // Float
 extern NSString * const KxMovieParameterDisableDeinterlacing;   // BOOL
 
+typedef void (^DoneCallbackBlock)();
+
 @interface KxMovieViewController : UIViewController<UITableViewDataSource, UITableViewDelegate> {
     KxMovieDecoder      *_decoder;
     dispatch_queue_t    _dispatchQueue;
@@ -89,6 +91,7 @@ extern NSString * const KxMovieParameterDisableDeinterlacing;   // BOOL
 @property (readwrite) BOOL playing;
 @property (readwrite) BOOL decoding;
 @property (readwrite, strong) KxArtworkFrame *artworkFrame;
+@property (readwrite, strong) DoneCallbackBlock doneCallback;
 
 - (void) play;
 - (void) pause;
